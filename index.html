@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leading University</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body class="dark:bg-color-primary-dark">
+    <header class="bg-color-primary-light fixed top-0 left-0 w-full z-50 mb-4" id="header">
+        <nav class=" container relative flex justify-between items-center h-24">
+            <div>
+                <img src="images/logo2.png" alt="" class="w-24 h-24">
+            </div>
+
+            <div class="hidden absolute top-0 left-0 w-full py-14 border-b border-color-secondary bg-color-primary-light md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
+                <ul class="flex flex-col text-center gap-5 md:flex-row md:items-center">
+                    <li><a href="#home" class="nav__link text-2xl  text-color-secondary hover:text-color-blob hover:underline ease-in duration-100 cursor-pointer">Home</a></li>
+                    <li><a href="#login"class="nav__link text-2xl   text-color-secondary hover:text-color-blob hover:underline ease-in duration-100 cursor-pointer">Login</a></li>
+                    <li><a href="#faculty"class="nav__link text-2xl  text-color-secondary hover:text-color-blob hover:underline ease-in duration-100 cursor-pointer">Faculty</a></li>
+                    <li><a href="#clubs"class="nav__link text-2xl  text-color-secondary hover:text-color-blob hover:underline ease-in duration-100 cursor-pointer">Clubs</a></li>
+                    <li><a href="#versity"class=" nav__link text-2xl  text-color-secondary hover:text-color-blob hover:underline ease-in duration-100 cursor-pointer"> Our versity</a></li>
+                    <li>
+                        <button class="px-9 py-3 text-color-white bg-gradient-to-r from-color-secondary to-color-blob capitalize rounded-lg  text-lg  ease-in">See more</button>
+                    </li>
+
+                    <div class="absolute top-[0.7rem] right-4 text-3xl cursor-pointer text-color-secondary hover:text-color-blob ease-in duration-200 md:hidden" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-color-secondary text-2xl hover:text-color-blob duration-200"></i>
+
+                <div id="hamburger">
+                    <i class="ri-menu-2-line cursor-pointer ml-4 text-color-secondary text-2xl hover:text-color-blob duration-200 md:hidden"></i>
+                </div>
+            </div> 
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class=" relative mt-24 pb-4 md:mt-28 ">
+            <div class="absolute top-30 left-80 w-72 h-72 bg bg-purple-500 rounded-full mix-blend-multiply filter blur-xl overflow-hidden -z-10 animate-Blob animation-delay-4000"></div>
+            <div class="absolute top-60 right-80 w-72 h-72 bg bg-amber-400 rounded-full mix-blend-multiply filter blur-xl overflow-hidden -z-10 animate-Blob animation-delay-2000"></div>
+            <div class="container flex flex-col items-center gap-10 md:flex-row">
+                <div class="mx-auto mt-8">
+                    <img src="images/sunnyuni2.jpg" alt="" class="w-96 rounded-lg ring-4 ring-color-secondary md:w-full">
+                </div>
+
+                <div class="text-center  md:text-start md:basis-1/2 lg:basis-3/5">
+                    <h1 class="mt-4 font-bold text-5xl md:text-6xl capitalize text-color-secondary ">Welcome To <span class="text-color-blob">Leading University</span></h1>
+                    <div></div>
+                    <p class="mt-4 leading-6 text-xl  text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dolorum repudiandae quibusdam iusto quia officia voluptate corporis. Perferendis dolor, culpa nam corporis quibusdam adipisci maiores explicabo, eius ea, eveniet exercitationem. Ipsum at voluptatibus asperiores illo saepe, cumque alias repudiandae beatae?</p>
+
+                    <button class="mt-4 py-3 px-7 bg-color-secondary text-white rounded-lg text-xl hover:bg-color-blob cursor-pointer duration-100 ease-in">Learn more</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="login" class="relative mt-16 md:mt-20">
+            <div class="container py-20">
+                <div class="absolute top-30 left-80 w-72 h-72 bg bg-amber-500 rounded-full mix-blend-multiply filter blur-xl overflow-hidden -z-10 animate-Blob animation-delay-4000"></div>
+                <div class="absolute top-60 right-80 w-72 h-72 bg bg-purple-600 rounded-full mix-blend-multiply filter blur-xl overflow-hidden -z-10 animate-Blob animation-delay-2000"></div>
+                <div>
+                    <h4 class="text-center font-bold text-6xl text-color-blob">Login</h4>
+                </div>
+
+                <form action="">
+                    <div class="w-full m-auto mt-8 text-center border-4 border-color-secondary rounded-xl p-5 md:h-2/3">
+                        <div class="text-color-blob grid gap-6 mb-6 md:grid-cols-2 mt-8">
+                            <input type="text" placeholder="Name" class="bg-gray-50 border-color-secondary text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-4 focus:border-color-secondary">
+                            <input type="email" placeholder="Email" class="bg-gray-50 border-color-secondary text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-4 focus:border-color-secondary">
+                            <input type="password" placeholder="password" class="bg-gray-50 border-color-secondary text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-4 focus:border-color-secondary">
+                            <input type="number" placeholder="Batch" class="bg-gray-50 border-color-secondary text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-4 focus:border-color-secondary">
+                        </div>
+                        <button class="mt-4 py-3 px-7 bg-color-secondary text-white rounded-lg text-xl hover:bg-color-blob cursor-pointer duration-100 ease-in">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="faculty" class="mt-16 pb md:mt-20 relative">
+            <div class="container">
+
+                <h1 class="text-6xl font-bold text-center text-color-secondary">Meet <span class="text-color-blob"> Our </span> Faculty</h1>
+                <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+                    <div class="py-5 px-5 w-full h-full rounded-xl border-4 border-color-blob hover:bg-color-secondary ease-in duration-150">
+                        <div>
+                            <img src="images/rumel.PNG" alt="" class="w-full h-[21rem] rounded-lg ring-2 ring-color-blob">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h2 class="mt-4 text-3xl font-bold text-color-blob ">Rumel MS Rahman Pir</h2>
+                            <p class="text-2xl underline text-color-blob ">Department Head</p>
+                        </div>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque nulla quis fugiat, repudiandae quam?</p>
+                        <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-blob cursor-pointer duration-100 ease-in">More Info</button>
+                    </div> 
+
+                    <div class="py-5 px-5 w-full h-full rounded-xl border-4 border-color-blob hover:bg-color-secondary ease-in duration-150">
+                        <div>
+                            <img src="images/naeemsir.PNG" alt="" class="rounded-lg ring-2 ring-color-blob">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h2 class="mt-4 text-3xl font-bold text-color-blob ">Naeem Ahsan Chowdhury</h2>
+                            <p class="text-2xl underline text-color-blob ">Adjunct Lecturer</p>
+                        </div>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque nulla quis fugiat, repudiandae quam?</p>
+                        <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-blob cursor-pointer duration-100 ease-in">More Info</button>
+                    </div>
+
+                    <div class="py-5 px-5 w-full h-full rounded-xl border-4 border-color-blob hover:bg-color-secondary ease-in duration-150">
+                        <div>
+                            <img src="images/ibrahim.PNG" alt="" class="rounded-lg ring-2 ring-color-blob">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h2 class="mt-4 text-3xl font-bold text-color-blob ">Ebrahim Hossain Sajib</h2>
+                            <p class="text-2xl underline text-color-blob ">Assistant professor</p>
+                        </div>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque nulla quis fugiat, repudiandae quam?</p>
+                        <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-blob cursor-pointer duration-100 ease-in">More Info</button>
+                    </div>
+
+                    <div class="py-5 px-5 w-full h-full rounded-xl border-4 border-color-blob hover:bg-color-secondary ease-in duration-150">
+                        <div>
+                            <img src="images/jalaljpg.jpg" alt="" class="rounded-lg ring-2 ring-color-blob">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h2 class="mt-4 text-3xl font-bold text-color-blob ">Jalaluddin Chowdhury</h2>
+                            <p class="text-2xl underline text-color-blob ">Adjunct  Lecturer</p>
+                        </div>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque nulla quis fugiat, repudiandae quam?</p>
+                        <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-blob cursor-pointer duration-100 ease-in">More Info</button>
+                    </div>
+
+                    <div class="py-5 px-5 w-full h-full rounded-xl border-4 border-color-blob hover:bg-color-secondary ease-in duration-150">
+                        <div>
+                            <img src="images/rana.PNG" alt="" class="w-full h-[22rem] rounded-lg ring-2 ring-color-blob">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h2 class="mt-4 text-3xl font-bold text-color-blob ">Rana M S Rahman Pir</h2>
+                            <p class="text-2xl underline text-color-blob ">Assistant professor</p>
+                        </div>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque nulla quis fugiat, repudiandae quam?</p>
+                        <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-blob cursor-pointer duration-100 ease-in">More Info</button>
+                    </div>
+
+                    <div class="py-5 px-5 w-full h-full rounded-xl border-4 border-color-blob hover:bg-color-secondary ease-in duration-150">
+                        <div>
+                            <img src="images/jamaner.PNG" alt="" class="w-full h-[22rem] rounded-lg ring-2 ring-color-blob">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h2 class="mt-4 text-3xl font-bold text-color-blob ">Md. Jamaner Rahaman</h2>
+                            <p class="text-2xl underline text-color-blob ">Lecturer</p>
+                        </div>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque nulla quis fugiat, repudiandae quam?</p>
+                        <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-blob cursor-pointer duration-100 ease-in">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clubs" class="relative mt-16 pb md:mt-20">
+            <div class="absolute top-30 left-80 w-72 h-72 bg bg-purple-500 rounded-full mix-blend-multiply filter blur-xl overflow-hidden -z-10 animate-Blob animation-delay-4000"></div>
+            <div class="absolute bottom-80 right-80 w-72 h-72 bg bg-amber-400 rounded-full mix-blend-multiply filter blur-xl overflow-hidden -z-10 animate-Blob animation-delay-2000"></div>
+            <div>
+            <div class="container">
+                <h1 class="text-6xl font-bold text-color-secondary text-center">Our Clubs</h1>
+                <div class="grid gap-4 mb-4 md:grid-cols-2">
+                    <div class=" mt-5 py5 px-5 w-full h-full rounded-lg border-4 border-color-secondary hover:bg-color-blob ease-in duration-150">
+                        <div>
+                            <img src="images/lucc.png" alt="" class="h-[14rem] w-full mt-5 rounded-lg ring-4 ring-color-secondary ">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h2 class="mt-5 text-4xl font-bold text-color-secondary">Leading University Computer Club</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit amet nemo tenetur dolores perferendis doloribus eveniet aut nam odio maiores.</p>
+                            <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-secondary cursor-pointer duration-100 ease-in">More Info</button>
+                        </div>
+                    </div>
+                    <div class=" mt-5 py5 px-5 w-full h-full rounded-lg border-4 border-color-secondary hover:bg-color-blob ease-in duration-150">
+                        <div>
+                            <img src="images/ieee.png" alt="" class="h-full w-full mt-5 rounded-lg ring-4 ring-color-secondary ">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h2 class="mt-5 text-4xl font-bold text-color-secondary">IEEE LU SB Computer Society</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit amet nemo tenetur dolores perferendis doloribus eveniet aut nam odio maiores.</p>
+                            <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-secondary cursor-pointer duration-100 ease-in">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 pb-4 md:mt-20">
+            <div class="container flex flex-col items-center gap-10 md:flex-row">
+                <div class="text-center md:basis-1/2 lg:basis-2/5 md:text-left">
+                    <h2 class="font-bold text-6xl text-color-blob">About Our Department</h2>
+                    <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nemo tempore nostrum magni a eveniet, mollitia commodi beatae quasi necessitatibus odit iste aperiam, laborum voluptates, qui unde minima quis labore!</p>
+                    <button class="mt-4 py-3 px-7 bg-color-primary-light text-white rounded-lg text-xl hover:bg-color-secondary cursor-pointer duration-100 ease-in">More Info</button>
+                </div>
+                <div class="mx-auto">
+                    <img src="images/dept.jpg" alt="" class="w-96 h-96 ring-4 ring-color-primary-light rounded-lg md:w-full md:h-[45rem]">
+                </div>
+            </div>
+        </section>
+
+        <section id="versity" class="relative mt-16 pb-4 md:mt-20">
+            <div class="absolute top-30 left-80 w-72 h-72 bg bg-purple-500 rounded-full mix-blend-multiply filter blur-xl overflow-hidden -z-10 animate-Blob animation-delay-4000"></div>
+            <div class="absolute bottom-60 right-80 w-72 h-72 bg bg-amber-400 rounded-full mix-blend-multiply filter blur-xl overflow-hidden -z-10 animate-Blob animation-delay-2000"></div>
+            <div>
+            <div class="container grid place-items-center min-h-screen">
+                <div class="p-4 grid  gap-5 m-w-5xl text-center  md:grid-cols-2 lg:grid-cols-4">
+                    <h1 class="text-6xl font-bold text-color-secondary md:col-span-2 md:grid md:grid-cols-2 md:gap-5 lg:col-span-3 lg:text-8xl lg:grid-cols-3"><span class="lg:col-span-3">Our Versity</span></h1>
+                    <p class="row-start-2 col-start-2 md:self-center md:col-start-1 lg:col-start-1 lg:col-span-2 pr-12 lg:text-lg lg:text-left text-color-blob">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sequi libero placeat doloribus assumenda explicabo, suscipit hic eveniet pariatur cum! Nam quisquam rerun</p>
+                    <img src="images/entrance.jpg" alt="1" class="h-[22rem]  w-[35rem] md:h-auto md:square ring-4 ring-color-secondary rounded-lg hover:ring-color-blob">
+                    <img src="images/mirrosuni.jpg" alt="2" class="h-[22rem]  w-[35rem]   md:h-auto md:square lg:h-[22rem] ring-4 ring-color-secondary rounded-lg hover:ring-color-blob">
+                    <img src="images/nighttimeuni.jpeg" alt="3" class="h-[22rem] w-[35rem]md:h-auto md:square ring-4 ring-color-secondary rounded-lg hover:ring-color-blob">
+                    <img src="images/nightversity.jpg" alt="4" class="h-[22rem] w-[35rem]  md:h-auto md:square lg:col-start-2 lg:h-[22rem] ring-4 ring-color-secondary rounded-lg hover:ring-color-blob">
+                    <img src="images/rainyversity.jpg " alt="5" class="h-[22rem] w-[35rem]md:h-auto md:square ring-4 ring-color-secondary rounded-lg hover:ring-color-blob">
+                    <img src="images/sunnyuni2.jpg" alt="6" class="h-[22rem] w-[35rem]md:h-auto md:square ring-4 ring-color-secondary rounded-lg hover:ring-color-blob">
+                    <img src="images/sunnyversity.jpg" alt="7" class="h-[22rem] w-[35rem]md:h-auto md:square ring-4 ring-color-secondary rounded-lg hover:ring-color-blob">
+                    <img src="images/stairs.jpg" alt="8" class="h-[22rem] w-[35rem] md:h-auto md:square lg:h-[22rem] ring-4 ring-color-secondary rounded-lg hover:ring-color-blob">
+                    <p class="self-center lg:text-lg lg:col-span-2 lg:text-left text-color-blob">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corporis ut sed. Facere, iusto quibusdam.</p>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="bg-color-primary-light">
+        <section id="footer" class="mt16 pb-4 md:mt-20">
+                <div class="container">
+                    <ul class="mt-4 grid gap-20 grid-cols-1 items-start md:grid-cols-2 lg:grid-cols-4">
+                        <li>
+                            <div class="mt-4 space-y-4">
+                                <h3 class="text-color-secondary font-bold text-3xl">Leading University</h3>
+                                <p class="text-sm text-white leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit, facilis dicta corporis illo ut nesciunt esse ad quos accusamus?</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex flex-col space-y-3 mt-4">
+                                <h3 class="text-color-secondary font-bold text-2xl">FAQs</h3>
+                                <a href="#" class="text-lg text-white leading-relaxed hover:text-color-blob cursor-pointer duration-150">Home</a>
+                                <a href="#"  class="text-lg text-white leading-relaxed hover:text-color-blob cursor-pointer duration-150">Login</a>
+                                <a href="#"  class="text-lg text-white leading-relaxed hover:text-color-blob cursor-pointer duration-150">Faculty</a>
+                                <a href="#"  class="text-lg text-white leading-relaxed hover:text-color-blob cursor-pointer duration-150">Clubs</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="mt-4 space-y-2">
+                                <h3 class="text-2xl font-bold text-color-secondary">Phone</h3>
+                                <p class="text-white text-xl">
+                                    <i class="fa-solid fa-phone text-lg text-white hover:text-color-blob duration-150"></i>
+                                    +1000000000
+                                </p>
+                            </div>
+
+                            <div class="mt-4 space-y-2">
+                                <h3 class="text-2xl font-bold text-color-secondary">Email</h3>
+                                <p class="text-white text-xl">
+                                    <i class="fa-solid fa-envelope text-lg text-white hover:text-color-blob duration-150"></i>
+                                    Leadinguni@gmail.com
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="mt-4 space-y-2">
+                                <h3 class="text-2xl font-bold text-color-secondary">Address</h3>
+                                <p class="text-white text-xl>
+                                    <i class="fa-solid fa-location-dot text-lg "></i>
+                                    RagibNagar Sylhet
+                                </p>
+                            </div>
+
+                            <div class="mt-4 space-y-2">
+                                <h3 class="text-2xl font-bold text-color-secondary">Follow Us</h3>
+                                <div class="flex flex-row gap-5">
+                                    <i class="fa-brands fa-facebook-f text-lg  text-white hover:text-color-blob duration-150"></i>
+                                    <i class="fa-brands fa-twitter text-lg  text-white hover:text-color-blob duration-150 "></i>
+                                    <i class="fa-brands fa-square-instagram text-lg  text-white hover:text-color-blob duration-150"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="flex flex-col justify-between mt-4 md:flex-row">
+                        <p class="text-xl text-color-blob ">University Template By Ahbab Sameer</p>
+                        <p class="text-lg text-color-blob ">Copyright &copy; All rights Reserved</p>
+                    </div>
+                </div>
+            
+        </section>
+    </footer>
+
+   
+    <script src="main.js"></script>
+</body>
+</html>
